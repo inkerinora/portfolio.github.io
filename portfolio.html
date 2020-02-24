@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    
+     <header>
+          <nav id="nav3">
+            <div><a href="index.html">HOME</a></div>
+            <div><a href="projectpage.hmtl">PROJECTS</a></div>
+            <div><a href="aboutme.html">ABOUT ME</a></div>
+            <div><a href="index.html#CV">CV</a></div>
+            <div><a href="#footercontent">CONTACTS</a></div>
+          </nav>
+      </header>
+
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 5000, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+    <a href="projectpage.html"><img src="Arrow.png" id="arrow" alt="Arrow"></a>
+
+    <div id="portfolioH"><h2>Portfolio-page</h2></div>
+
+    <div id="portfolioP">
+      <p>During our freshman year, one of our courses is "Verkkojulkaisun
+        perusteet", which is about the basics on online publishing,
+        meaning web pages and such. We learn about the design of web pages
+        and the tools you can design with. We also learn how to code web pages
+        using HTML5 and CSS. We learn a bit about Javascript too later on the
+        course
+      </p>
+      <p>One of the projects on the course is to design and code our
+        own portfolio with HTML and CSS. We designed with Figma.
+        So that's what this is! I've learned a LOT in
+        a short time and had fun in the process.
+      </p>
+    </div>
+
+    <img src="code.jpg" id="codepic" alt="Code">
+
+    <footer>
+      <div id="footercontent">
+        <h2>Contact me</h2>
+        <p>nora.inkeri@gmail.com</p>
+        <p>+358 442143468</p>
+        <h2>Socials</h2>
+          <div id="somelogot">
+           <a href="https://www.facebook.com/inkeri.nora">
+            <img src="fb.png" id="fb" alt="FB">
+           </a>
+           <a href="https://www.instagram.com/inkerinora/?hl=en">
+            <img src="ig.png" id="ig" alt="IG">
+           </a>
+           <a href="https://www.linkedin.com/in/inkerinora/">
+            <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+           </a>
+         </div>
+      </div>
+    </footer>
+  </body>
+ </html>

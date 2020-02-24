@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+          <header>
+              <nav id="nav1">
+                <div><a href="index.html">HOME</a></div>
+                <div><a href="projectpage.html">PROJECTS</a></div>
+                <div><a href="aboutme.html">ABOUT ME</a></div>
+                <div><a href="#CV">CV</a></div>
+                <div><a href="#footercontent">CONTACTS</a></div>
+              </nav>
+            </header>
+
+      <script>
+      $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 5000, function(){
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+
+      <a href="projectpage.html#more"><img src="Arrow.png" id="arrow" alt="Arrow"></a>
+
+      <div id="arkkiH"><h2>Pre-assignment for architecture application</h2></div>
+
+      <div class="MakingOf">
+        <img src="arkki1.jpg" id="arkki1" alt="MakingOf1">
+        <img src="arkki2.jpg" id="arkki2" alt="MakingOf2">
+        <img src="arkki3.jpg" id="arkki3" alt="MakingOf3">
+      </div>
+
+      <div id="arkkiP">
+        <p> When I applied to university after high school, one of the programs
+          I applied to was architecture. The pre-assignment was to build a nest
+          for small glowing sea creatures out of fifty plastic cups. I didn't
+          get into the next phase based on this monstrosity, but I had fun making
+          it. I still have it somewhere.
+        </p>
+      </div>
+
+      <footer>
+        <div id="footercontent">
+          <h2>Contact me</h2>
+          <p>nora.inkeri@gmail.com</p>
+          <p>+358 442143468</p>
+          <h2>Socials</h2>
+            <div id="somelogot">
+             <a href="https://www.facebook.com/inkeri.nora">
+              <img src="fb.png" id="fb" alt="FB">
+             </a>
+             <a href="https://www.instagram.com/inkerinora/?hl=en">
+              <img src="ig.png" id="ig" alt="IG">
+             </a>
+             <a href="https://www.linkedin.com/in/inkerinora/">
+              <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+             </a>
+           </div>
+        </div>
+      </footer>
+  </body>
+</html>

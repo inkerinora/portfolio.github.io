@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+        <header>
+            <nav id="nav3">
+              <div><a href="index.html">HOME</a></div>
+              <div><a href="projectpage.hmtl">PROJECTS</a></div>
+              <div><a href="aboutme.html">ABOUT ME</a></div>
+              <div><a href="index.html#CV">CV</a></div>
+              <div><a href="#footercontent">CONTACTS</a></div>
+            </nav>
+          </header>
+
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 5000, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+    <a href="projectpage.html"><img src="Arrow.png" id="arrow" alt="Arrow"></a>
+
+    <div id="matineeH"><h2>Syksyn värejä -matinees</h2></div>
+
+    <article id="matineepics">
+      <div id="slider2">
+        <figure>
+          <img src="Skytt1.jpg" alt="Matinee1">
+          <img src="Mikkola3.jpg" alt="Matinee2">
+          <img src="Program.jpg" alt="Matinee3">
+          <img src="Mikkola4.jpg" alt="Matinee4">
+          <img src="Skytt1.jpg" alt="Matinee1">
+       </figure>
+      </div>
+      <p>Here's some of the pictures I took during one of the matinees!<p>
+    </article>
+
+    <div id="matineeP">
+      <p>Syksyn värejä (The Colours Of Autumn) was the first project that
+        I was in charge of, regarding the marketing, communications and
+        visual side of the project. I did the poster (which was the first
+        poster I have ever made), the program, wrote the briefing and sent
+        to local news... I also photographed the matinees and handed the
+        programs to the audience. I think I did pretty good considering
+        that I had no former experience on this kind of work.
+      </p>
+    </div>
+        <img src="matinea.jpg" id="matinea2" alt="MatineePoster">
+        <div id="postertext">
+          <p>This is the poster that I made for the matinees.</p>
+          <p>This was the first poster I ever made!</p>
+        </div>
+
+        <footer>
+          <div id="footercontent">
+            <h2>Contact me</h2>
+            <p>nora.inkeri@gmail.com</p>
+            <p>+358 442143468</p>
+            <h2>Socials</h2>
+              <div id="somelogot">
+               <a href="https://www.facebook.com/inkeri.nora">
+                <img src="fb.png" id="fb" alt="FB">
+               </a>
+               <a href="https://www.instagram.com/inkerinora/?hl=en">
+                <img src="ig.png" id="ig" alt="IG">
+               </a>
+               <a href="https://www.linkedin.com/in/inkerinora/">
+                <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+               </a>
+             </div>
+          </div>
+        </footer>
+    </body>
+  </html>

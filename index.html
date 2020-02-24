@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+    <body>
+
+      <header>
+          <nav id="nav1">
+            <div><a href="index.html">HOME</a></div>
+            <div><a href="projectpage.html">PROJECTS</a></div>
+            <div><a href="aboutme.html">ABOUT ME</a></div>
+            <div><a href="#CV">CV</a></div>
+            <div><a href="#footercontent">CONTACTS</a></div>
+          </nav>
+        </header>
+
+      <script>
+      $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 5000, function(){
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+
+     <img src="OmaLogo.png" id="logo" alt="Logo">
+        <h1>Hello there!</h1>
+        <div class="a">
+          <p>
+            Welcome to my online portfolio! I'm Inkeri, a 20-year-old student
+            majoring in Information networks. You can navigate my page with
+            the bar at the top or by scrolling down. I hope you find this interesting!
+          </p>
+        </div>
+        <div class="b">
+          <p>
+            Disclaimer: All of the photos that have anything to do with
+            my time in the military, are owned by the Finnish Defence Forces.
+          </p>
+        </div>
+
+        <article class="projects">
+          <h2>Recent projects</h2>
+              <div id="slider">
+                <figure>
+                  <img src="AUK1.jpg" alt="AUK1">
+                  <img src="aunt1.jpg" alt="Aunt">
+                  <img src="Skytt2.jpg" alt="Matinee1">
+                  <img src="Mikkola1.jpg" alt="Matinee2">
+                  <img src="AUK1.jpg" alt="AUK1">
+               </figure>
+              </div>
+              <div id="button1">
+                <a href="projectpage.html">Take a closer look!</a>
+              </div>
+        </article>
+
+      <article>
+        <h2>Me</h2>
+        <img src="Me.jpg" id="me" alt="Me">
+          <section id="pink">
+            <img src="Location.png" id="location" alt="Map-Pin">
+              <div id="locationtext">
+                <p>Helsinki, Finland</p>
+              </div>
+            <img src="Koulu.png" id="koulu" alt="School"> <p>Aalto university</p>
+          </section>
+          <section id="text">
+              <p>
+                I enjoy good music and food greatly. My favourite bands are
+                Ultra Bra, Tabula Rasa and Fleetwood Mac. I love Mexican and
+                Asian food, but I also have a place in my heart for traditional
+                Finnish food. I love spending time with my family. I wish I got
+                to spend more time with them, but only my other sister lives in
+                the same city as I do. I don't like early mornings. I love animals
+                but I'm allergic to most of them. I love playing Big Band music.
+                I try to consider the environment in my daily choices.
+              </p>
+          </section>
+          <div id="button2">
+            <a href="aboutme.html">Get to know me better!</a>
+          </div>
+      </article>
+
+
+      <article id="CV">
+        <h2>CV</h2>
+
+          <div class="eng">
+            <h4>In English</h4>
+            <img src="CV-eng.png" id="english" alt="CVenglish">
+          </div>
+
+          <div class="fin">
+            <h4>In Finnish</h4>
+            <img src="CV-suomi.png" id="finnish" alt="CVfinnish">
+          </div>
+
+      </article>
+
+      <footer>
+        <div id="footercontent">
+          <h2>Contact me</h2>
+          <p>nora.inkeri@gmail.com</p>
+          <p>+358 442143468</p>
+          <h2>Socials</h2>
+            <div id="somelogot">
+             <a href="https://www.facebook.com/inkeri.nora">
+              <img src="fb.png" id="fb" alt="FB">
+             </a>
+             <a href="https://www.instagram.com/inkerinora/?hl=en">
+              <img src="ig.png" id="ig" alt="IG">
+             </a>
+             <a href="https://www.linkedin.com/in/inkerinora/">
+              <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+             </a>
+           </div>
+        </div>
+      </footer>
+  </body>
+</html>

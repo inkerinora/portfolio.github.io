@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+    <body>
+
+          <header>
+              <nav id="nav3">
+                <div><a href="index.html">HOME</a></div>
+                <div><a href="projectpage.hmtl">PROJECTS</a></div>
+                <div><a href="aboutme.html">ABOUT ME</a></div>
+                <div><a href="index.html#CV">CV</a></div>
+                <div><a href="#footercontent">CONTACTS</a></div>
+              </nav>
+            </header>
+
+      <script>
+      $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 5000, function(){
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+
+      <article>
+        <div id="faveheader">
+          <h2>My three favourite projects and why</h2>
+          <p>Click on a project to read more about it!<p>
+        </div>
+
+        <div class="fave">
+
+          <div id="fave1">
+            <a href="matinee.html">
+              <img src="matinea.jpg" id="matinea" alt="Matinee">
+            </a>
+            <a href="matinee.html"><h3>Syksyn värejä -matinees</h3></a>
+            <p>
+              This project was a part of my NCO-course last fall.
+              It was the first project, that I was in charge of regarding
+              the marketing, graphic and communications side of the project.
+            </p>
+          </div>
+
+          <div id="fave2">
+            <a href="portfolio.html">
+              <img src="OmaLogo.png" id="logo2" alt="Logo">
+            </a>
+            <a href="portfolio.html"><h3>Portfolio</h3></a>
+            <p>
+              I've had a lot of fun designing and coding this web page.
+              This online portfolio was a school project. I think the skills
+              I've gained and the portfolio itself will prove to be useful
+              in the future.
+            </p>
+          </div>
+
+          <div id="fave3">
+            <a href="auk1.html">
+              <img src="AUK1.jpg" id="auk1" alt="AUK1">
+            </a>
+            <a href="auk1.html"><h3>"AUK 1"</h3></a>
+            <p>The final favourite project was the first part of the NCO course
+              which I attended. For me it was the best part of the whole year I spend
+              doing my voluntary military service. I think I grew as a person on the
+              course.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article id="more">
+        <h2> More projects </h2>
+        <div class="gallery">
+            <a href="showband.html">
+              <img src="Summertour.jpg" alt="Summer tour">
+            </a>
+            <div class="desc">Showband</div>
+          </div>
+
+          <div class="gallery">
+            <a href="auntie.html">
+              <img src="aunt2.jpg" alt="Auntie">
+            </a>
+            <div class="desc">The best auntie ever</div>
+          </div>
+
+          <div class="gallery">
+            <a href="arri.html">
+              <img src="arri.png" alt="Arrangement">
+            </a>
+            <div class="desc">Arranging</div>
+          </div>
+
+          <div class="gallery">
+            <a href="application.html">
+              <img src="lamppu.jpg" alt="pre-assignment">
+            </a>
+            <div class="desc">Architecture application</div>
+        </div>
+      </article>
+
+      <footer>
+        <div id="footercontent">
+          <h2>Contact me</h2>
+          <p>nora.inkeri@gmail.com</p>
+          <p>+358 442143468</p>
+          <h2>Socials</h2>
+            <div id="somelogot">
+             <a href="https://www.facebook.com/inkeri.nora">
+              <img src="fb.png" id="fb" alt="FB">
+             </a>
+             <a href="https://www.instagram.com/inkerinora/?hl=en">
+              <img src="ig.png" id="ig" alt="IG">
+             </a>
+             <a href="https://www.linkedin.com/in/inkerinora/">
+              <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+             </a>
+           </div>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+        <header>
+            <nav id="nav2">
+              <div><a href="index.html">HOME</a></div>
+              <div><a href="projectpage.html">PROJECTS</a></div>
+              <div><a href="aboutme.html">ABOUT ME</a></div>
+              <div><a href="index.html#CV">CV</a></div>
+              <div><a href="#footercontent">CONTACTS</a></div>
+            </nav>
+          </header>
+
+    <script>
+    $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 5000, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  </script>
+
+    <div id="background">
+      <h2>Background</h2>
+        <p>I was born in 1999 in Rauma, Finland. I graduated from
+          upper secondary school in the spring of 2018 with
+          Eximia cum laude approbatur. I started university the
+          next autumn in Aalto with a major in Information networks
+          and moved to Helsinki.
+        </p>
+
+        <p>After six months of studying, I left for a year to do
+          my voluntary military service for women in
+          the Conscript Band of Finland. Now I’m returned to
+          school with a new kind of motivation toward studying.
+        </p>
+
+        <p>Happy to be back!</p>
+      </div>
+
+      <img src="baretti.png" id="baretti" alt="Beret">
+      <div id="beret"><p>The blue beret of military music</p></div>
+
+      <div id="character">
+        <h2>Character</h2>
+          <p>
+            I would say my best qualities are that I’m decisive,
+            care-free and a fast learner. My peers and superiors
+            have described me as a good coworker, since I’m always
+            ready to help and I get things done. I’m also really
+            interested in learning new skills.
+          </p>
+
+          <p>I’m trying to improve myself in stress and time management.
+            I don’t stress often, but when I do, I feel like there’s
+            a big knot in my brain. I’m trying to learn how to undo that knot.
+          </p>
+      </div>
+
+    <div id="interests">
+      <h2>Interests</h2>
+      <img src="barska.png" id="barska" alt="Bari Sax">
+    </div>
+
+    <div id="future">
+      <h2>Future</h2>
+        <p>What I hope from the future is variety. I want to gain
+          experience from different fields of work, skill and life
+          itself. Information networks is a good start.
+        </p>
+
+        <p>I have background in visual art and music. I’m hoping to
+          incorporate that into my work in some way.
+        </p>
+
+        <p>I’m excited to learn more about UX, UI and service design.
+          I’m eager to know if that could be something to build
+          a career around. Time will tell!
+        </p>
+     </div>
+
+     <footer>
+       <div id="footercontent">
+         <h2>Contact me</h2>
+         <p>nora.inkeri@gmail.com</p>
+         <p>+358 442143468</p>
+         <h2>Socials</h2>
+           <div id="somelogot">
+            <a href="https://www.facebook.com/inkeri.nora">
+             <img src="fb.png" id="fb" alt="FB">
+            </a>
+            <a href="https://www.instagram.com/inkerinora/?hl=en">
+             <img src="ig.png" id="ig" alt="IG">
+            </a>
+            <a href="https://www.linkedin.com/in/inkerinora/">
+             <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+            </a>
+          </div>
+       </div>
+     </footer>
+  </body>
+</html>

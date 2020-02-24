@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio-etusivu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+          <header>
+              <nav id="nav1">
+                <div><a href="index.html">HOME</a></div>
+                <div><a href="projectpage.html">PROJECTS</a></div>
+                <div><a href="aboutme.html">ABOUT ME</a></div>
+                <div><a href="#CV">CV</a></div>
+                <div><a href="#footercontent">CONTACTS</a></div>
+              </nav>
+            </header>
+
+      <script>
+      $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 5000, function(){
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+
+      <a href="projectpage.html#more"><img src="Arrow.png" id="arrow" alt="Arrow"></a>
+
+      <div id="showbandH"><h2>Showband</h2></div>
+
+      <article id="showbandpics">
+        <div id="slider3">
+          <figure>
+            <img src="Summer3.jpg" alt="Showband1">
+            <img src="Summer1.jpg" alt="Showband2">
+            <img src="Summer4.jpg" alt="Showband3">
+            <img src="Summer2.jpg" alt="Showband4">
+            <img src="Summer3.jpg" alt="Showband1">
+         </figure>
+        </div>
+      </article>
+
+      <div id="showbandP">
+        <p> One of the best things I have ever experienced, was
+          the summer tour of the Finnish Defence Forces, where
+          the Showband of the Conscript Band of Finland performed.
+          Performing with this amazing band of incredible young
+          musicians for thousands of people in the audience of every
+          gig... I have no words for it. If I had to do one thing
+          for the rest of my life, this would be it.
+        </p>
+      </div>
+
+      <footer>
+        <div id="footercontent">
+          <h2>Contact me</h2>
+          <p>nora.inkeri@gmail.com</p>
+          <p>+358 442143468</p>
+          <h2>Socials</h2>
+            <div id="somelogot">
+             <a href="https://www.facebook.com/inkeri.nora">
+              <img src="fb.png" id="fb" alt="FB">
+             </a>
+             <a href="https://www.instagram.com/inkerinora/?hl=en">
+              <img src="ig.png" id="ig" alt="IG">
+             </a>
+             <a href="https://www.linkedin.com/in/inkerinora/">
+              <img src="linkedin.png" id="linkedin" alt="LinkedIn">
+             </a>
+           </div>
+        </div>
+      </footer>
+  </body>
+</html>

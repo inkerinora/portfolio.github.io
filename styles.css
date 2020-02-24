@@ -1,0 +1,745 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body > * {
+  font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 800px){
+  body {
+    font-size: 14px;
+  }
+   div.a, div.b {
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+  #logo {
+    width: 50%;
+  }
+  #button1, #button2 {
+    width: 200px;
+    height: 60px;
+    font-size: 11px;
+  }
+  #me {
+    width: 200px;
+  }
+  #text {
+    width: 45%;
+  }
+  #background, #character, #future {
+    width: 60%;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  #barska {
+    width: 70%;
+    margin-left: 50px;
+  }
+  #baretti {
+    margin-left: 20%;
+    margin-top: 100px;
+    width: 50%;
+  }
+  #beret {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  #beret, #IPlay {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+  #logo {
+    width: 25%;
+  }
+  #button1, #button2 {
+    width: 272px;
+    height: 78px;
+    font-size: 14px;
+  }
+  #background, #character, #future {
+    width: 20%;
+    font-size: 18px;
+  }
+  #background, #character {
+    margin-top: -80px;
+  }
+  #background {
+    margin-top: 100px;
+    margin-left: 150px;
+    float: left;
+  }
+  #character {
+    margin-top: -440px;
+    margin-right: 150px;
+    float: right;
+  }
+  #barska {
+    float: left;
+    width: 50%;
+    margin-left: 100px;
+  }
+  #interests {
+    float: left;
+    margin-bottom: 50px;
+  }
+  #future {
+    margin-top: -570px;
+    margin-right: 150px;
+    float: right;
+  }
+  #baretti {
+    margin-left: 10%;
+    margin-top: 220px;
+    width: 17%;
+  }
+  #beret {
+    margin-left: 40%;
+    margin-top: 30px;
+  }
+  #beret, #IPlay {
+    font-size: 14px;
+  }
+}
+
+footer {
+  height: 368px;
+  background-color: #D2D0BA;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#somelogot {
+  margin-top: 30px;
+}
+
+#ig {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8%;
+  align-items: center;
+  left: 0;
+  box-shadow: 0px 2px 4px #2D2E2E;
+}
+
+nav > * {
+  font-family: 'Montserrat';
+}
+
+#nav1 {
+  background-color: #B6BE9C;
+}
+
+#nav2 {
+  background-color: #E5C1BD;
+}
+
+#nav3 {
+  background-color: #6E7F80;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Josefin Sans';
+}
+
+h1, h2, h4 {
+  display: flex;
+  justify-content: center;
+}
+
+#logo{
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slider {
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #2D2E2E;
+  margin-top: 50px;
+}
+
+#slider2, #slider3 {
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #2D2E2E;
+  margin-top: 50px;
+  max-width: 50%;
+  margin-left: 100px;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider2 figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  margin-bottom: 300px;
+}
+
+#slider3 figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+#slider2 figure img {
+  width: 20%;
+  float: left;
+}
+
+#slider3 figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+}
+
+@keyframes slider2 {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+}
+
+@keyframes slider3 {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+}
+
+#button1, #button2 {
+  font-family: Montserrat;
+  box-shadow: 0px 2px 4px #2D2E2E;
+  background-image: linear-gradient(rgba(123,158,135,0.7), rgba(123,158,135,1));
+}
+
+#button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+#me {
+  display: block;
+  margin-left: 8%;
+  margin-right: 2%;
+  max-width: 300px;
+  min-width: 150px;
+  box-shadow: 0px 2px 4px #2D2E2E;
+  float: left;
+}
+
+#pink {
+  background-color: #E5C1BD;
+  height: 125px;
+}
+
+#location {
+  float: left;
+  margin-left: 2.6%;
+  margin-right: 26px;
+}
+
+#locationtext {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+#koulu {
+  float: left;
+  margin-left: 2%;
+  margin-right: 20px;
+}
+
+#text {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  max-width: 700px;
+  line-height: 25px;
+}
+
+div.a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.b {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px
+}
+
+#CV {
+  margin-top: 250px;
+}
+
+div.eng {
+  margin-top: 50px;
+}
+
+div.eng h4{
+  margin-right: 53%;
+  margin-bottom: 50px;
+}
+
+#english {
+  float: left;
+  margin-left: 3.9%;
+  max-width: 45%;
+  box-shadow: 0px 2px 4px #2D2E2E;
+}
+
+div.fin h4{
+  margin-top: -69px;
+  margin-left: 53%;
+}
+
+#finnish {
+  float: right;
+  margin-right: 3.9%;
+  max-width: 45%;
+  box-shadow: 0px 2px 4px #2D2E2E;
+  margin-bottom: 200px;
+}
+
+div.fave {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#faveheader {
+  margin-top: 100px;
+}
+
+#faveheader p {
+  display: flex;
+  justify-content: center;
+  margin-left: 360px;
+}
+
+#matinea {
+  width: 80%;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 20px;
+}
+
+#fave1 {
+  float: left;
+  width: 30%;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+#fave1 h3 {
+  margin-left: 65px;
+}
+
+#fave1 p {
+  width: 60%;
+  text-align: center;
+  margin-left: 40px;
+}
+
+#matinea:hover {
+  border-radius: 0%;
+  transition: border-radius 0.5s;
+}
+
+#logo2 {
+  width: 80%;
+  margin-bottom: 3px;
+}
+
+#fave2 {
+  float: left;
+  width: 30%;
+  margin-right: 50px;
+}
+
+#fave2 h3 {
+  margin-left: 140px;
+}
+
+#fave2 p {
+  width: 60%;
+  text-align: center;
+  margin-left: 50px;
+}
+
+#auk1 {
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 23px;
+}
+
+#auk1:hover {
+  border-radius: 0;
+  transition: border-radius 0.5s;
+}
+
+#fave3 {
+  float: right;
+  width: 30%;
+}
+
+#fave3 h3 {
+  margin-left: 140px;
+}
+
+#fave3 p {
+  width: 60%;
+  text-align: center;
+  margin-left: 47px;
+}
+
+#arrow {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+#matineeH {
+  margin-top: 30px;
+}
+
+#matineeP {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 110px;
+  margin-bottom: 200px;
+}
+
+#matinea2 {
+  width: 23%;
+  float: right;
+  margin-top: -940px;
+  margin-right: 100px;
+  box-shadow: 0px 2px 4px #2D2E2E;
+}
+
+#postertext {
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -480px;
+  margin-right: 100px;
+}
+
+#matineepics p {
+  font-size: 14px;
+  margin-left: 230px;
+}
+
+#portfolioP {
+  width: 40%;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+  text-align: right;
+}
+
+#codepic {
+  width: 40%;
+  margin-right: 100px;
+  float: right;
+  margin-bottom: 200px;
+  margin-top: 50px;
+  box-shadow: 0px 2px 4px #2D2E2E;
+}
+
+#AukP {
+  width: 30%;
+  margin-top: 180px;
+  margin-right: 150px;
+  float: right;
+}
+
+#alfa3 {
+  width: 45%;
+  margin-left: 90px;
+  float: left;
+  margin-bottom: 200px;
+  margin-top: 50px;
+  box-shadow: 0px 2px 4px #2D2E2E;
+}
+
+#more {
+  margin-top: 100px;
+}
+
+#more h2 {
+  margin-bottom: 50px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 24%;
+  margin-bottom: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#showbandP {
+  float: right;
+  width: 30%;
+  margin-right: 100px;
+  margin-top: -350px;
+  margin-bottom: 300px;
+}
+
+#auntieH {
+  margin-bottom: 50px;
+}
+
+#auntie {
+  width: 50%;
+  margin-left: 100px;
+  float: left;
+  margin-bottom: 200px;
+}
+
+#auntieP {
+  float: right;
+  width: 30%;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+div.video {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  float: left;
+}
+
+div.video p{
+  font-size: 14px;
+  text-align: center;
+}
+
+#arriP {
+  float: right;
+  margin-right: 100px;
+  margin-top: 100px;
+  width: 40%;
+}
+
+#arkkiH {
+  margin-bottom: 50px;
+}
+
+div.MakingOf {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+#arkki1, #arkki2, #arkki3 {
+  max-width: 30%;
+}
+
+#arkkiP {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+#background, #character {
+  text-align: center;
+}
+
+#interests {
+  margin-top: 150px;
+}
+
+#barska {
+  margin-bottom:15px;
+}
+
+#IPlay {
+  text-align: center;
+}
+
+#future {
+  margin-bottom: 200px;
+  text-align: center;
+}
